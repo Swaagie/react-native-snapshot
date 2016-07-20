@@ -15,7 +15,6 @@ RCT_EXPORT_MODULE()
 }
 
 RCT_EXPORT_METHOD(saveSnapshotToPath:(nonnull NSNumber *)reactTag
-                  path:(NSString *)filePath
                   callback:(RCTResponseSenderBlock)callback)
 {
 
@@ -31,15 +30,10 @@ RCT_EXPORT_METHOD(saveSnapshotToPath:(nonnull NSNumber *)reactTag
 
   NSData *data = UIImagePNGRepresentation(image);
 
-  NSError *error;
 
-  BOOL writeSucceeded = [data writeToFile:filePath options:0 error:&error];
-
-  if (!writeSucceeded) {
-    return callback(@[[NSString stringWithFormat:@"Could not write file at path %@", filePath]]);
-  }
-
-  callback(@[[NSNull null], [NSNumber numberWithBool:writeSucceeded]]);
+  NSString *base64String = [data base64EncodedStringWithOptions:0];
+  
+  callback(@[[NSNull null], [NSString stringWithString:base64String]]);
 }
 
 @end
