@@ -1,9 +1,9 @@
-#import "ViewSnapshotter.h"
+#import "Snapshot.h"
 #import "RCTConvert.h"
 #import "RCTBridge.h"
 #import "RCTUIManager.h"
 
-@implementation ViewSnapshotter
+@implementation Snapshot
 
 RCT_EXPORT_MODULE()
 
@@ -14,7 +14,7 @@ RCT_EXPORT_MODULE()
   return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(saveSnapshotToPath:(nonnull NSNumber *)reactTag
+RCT_EXPORT_METHOD(get:(nonnull NSNumber *)reactTag
                   callback:(RCTResponseSenderBlock)callback)
 {
   UIView *view = [self.bridge.uiManager viewForReactTag:reactTag];
