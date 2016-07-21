@@ -17,7 +17,6 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(saveSnapshotToPath:(nonnull NSNumber *)reactTag
                   callback:(RCTResponseSenderBlock)callback)
 {
-
   UIView *view = [self.bridge.uiManager viewForReactTag:reactTag];
 
   // defaults: snapshot the same size as the view, with alpha transparency, with current device's scale factor
@@ -29,10 +28,8 @@ RCT_EXPORT_METHOD(saveSnapshotToPath:(nonnull NSNumber *)reactTag
   UIGraphicsEndImageContext();
 
   NSData *data = UIImagePNGRepresentation(image);
-
-
   NSString *base64String = [data base64EncodedStringWithOptions:0];
-  
+
   callback(@[[NSNull null], [NSString stringWithString:base64String]]);
 }
 
