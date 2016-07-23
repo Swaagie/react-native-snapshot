@@ -2,7 +2,7 @@
   "name": "react-native-snapshot",
   "version": "1.0.0",
   "description": "Get snapshot images from React Native views as base64 encoded strings.",
-  "main": "ViewSnapshotter.js",
+  "main": "Snapshot.js",
   "author": {
     "name": "Martijn Swaagman",
     "email": "info@martijnswaagman.nl",
