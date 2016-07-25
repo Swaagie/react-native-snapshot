@@ -6,7 +6,7 @@ const {
 const NativeViewSnapshotter = NativeModules.Snapshot;
 
 const Snapshot = {
-  get: NativeViewSnapshotter.saveSnapshotToPath
+  get: NativeViewSnapshotter.get
 };
 
 module.exports = Snapshot;
