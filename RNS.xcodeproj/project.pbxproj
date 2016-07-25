@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14F2AAE81D432380003D0C62 /* Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F2AAE61D432380003D0C62 /* Snapshot.h */; };
-		14F2AAE91D432380003D0C62 /* Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F2AAE71D432380003D0C62 /* Snapshot.m */; };
+		141D9E0D1D460A9300AF600E /* Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 141D9E0B1D460A9300AF600E /* Snapshot.h */; };
+		141D9E0E1D460A9300AF600E /* Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 141D9E0C1D460A9300AF600E /* Snapshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141D9E0B1D460A9300AF600E /* Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snapshot.h; sourceTree = "<group>"; };
+		141D9E0C1D460A9300AF600E /* Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snapshot.m; sourceTree = "<group>"; };
 		14F2AAD91D43234F003D0C62 /* libRNS.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libRNS.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F2AAE61D432380003D0C62 /* Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Snapshot.h; path = ../Snapshot.h; sourceTree = "<group>"; };
-		14F2AAE71D432380003D0C62 /* Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Snapshot.m; path = ../Snapshot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +47,8 @@
 		14F2AAE51D432365003D0C62 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				14F2AAE61D432380003D0C62 /* Snapshot.h */,
-				14F2AAE71D432380003D0C62 /* Snapshot.m */,
+				141D9E0B1D460A9300AF600E /* Snapshot.h */,
+				141D9E0C1D460A9300AF600E /* Snapshot.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F2AAE81D432380003D0C62 /* Snapshot.h in Headers */,
+				141D9E0D1D460A9300AF600E /* Snapshot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F2AAE91D432380003D0C62 /* Snapshot.m in Sources */,
+				141D9E0E1D460A9300AF600E /* Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +247,7 @@
 				14F2AAE41D43234F003D0C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

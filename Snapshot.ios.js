@@ -3,7 +3,7 @@ const {
   NativeModules
 } = React;
 
-const NativeViewSnapshotter = NativeModules.ViewSnapshotter;
+const NativeViewSnapshotter = NativeModules.Snapshot;
 
 const Snapshot = {
   get: NativeViewSnapshotter.saveSnapshotToPath
