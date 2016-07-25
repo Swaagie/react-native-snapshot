@@ -1,6 +1,6 @@
 {
   "name": "react-native-snapshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get snapshot images from React Native views as base64 encoded strings.",
   "main": "Snapshot.js",
   "license": "MIT",

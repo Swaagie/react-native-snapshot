@@ -1,12 +1,10 @@
 const React = require('react-native');
-const { NativeModules, findNodeHandle } = React;
+const { NativeModules } = React;
 
 const NativeViewSnapshotter = NativeModules.Snapshot;
 
 const Snapshot = {
-  get: function get(ref, done) {
-    NativeViewSnapshotter.get(findNodeHandle(ref), done);
-  }
+  get: NativeViewSnapshotter.get
 };
 
 module.exports = Snapshot;
