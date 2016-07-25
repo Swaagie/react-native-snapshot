@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Get snapshot images from React Native views as base64 encoded strings.",
   "main": "Snapshot.js",
+  "license": "MIT",
+  "keywords": [
+    "React",
+    "Native",
+    "Snapshot",
+    "base64"
+  ],
   "author": {
     "name": "Martijn Swaagman",
     "email": "info@martijnswaagman.nl",
