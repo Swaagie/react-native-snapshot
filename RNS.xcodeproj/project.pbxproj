@@ -83,7 +83,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Martijn Swaagman";
+				ORGANIZATIONNAME = "Moveo";
 				TargetAttributes = {
 					F12AFB9A1ADAF8F800E0535D = {
 						CreatedOnToolsVersion = 6.3;
