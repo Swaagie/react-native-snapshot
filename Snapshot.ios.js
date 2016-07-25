@@ -5,7 +5,7 @@ const NativeViewSnapshotter = NativeModules.Snapshot;
 
 const Snapshot = {
   get: function get(ref, done) {
-    NativeViewSnapshotter.get.call(NativeViewSnapshotter, findNodeHandle(ref), done);
+    NativeViewSnapshotter.get(findNodeHandle(ref), done);
   }
 };
 

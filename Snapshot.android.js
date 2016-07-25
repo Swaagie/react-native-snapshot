@@ -1,6 +1,6 @@
 const Snapshot = {
   get: function get(ref, done) {
-    done(null, 'Android not available yet');
+    done(null, new Error('Android not available yet'));
   }
 };
 
